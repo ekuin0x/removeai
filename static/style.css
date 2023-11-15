@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.gif{
+    width: 100%;
+    height: auto;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right , rgb(155, 61, 146),rgb(83, 142, 195),rgb(46, 112, 226));
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav b{
+    color: rgb(1, 1, 1);
+}
+p{
+    text-align: center;
+}
+.input, form{
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+#wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.flex1{
+    width: calc(100vw - 300px);
+    min-height: 70vh;
+}
+h2{
+    padding: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+#upload{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(56, 56, 56);
+    margin: auto;
+    border-radius: 5px;
+    display: flex;align-items: center;justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+#upload p{
+    color: #809BC9;
+    font-size: 130px;
+}
+#upload:hover{
+    background-color: #174669;
+    transition: .4s;
+}
+.flex2{
+    width: 300px;
+    background-color: rgb(46, 112, 226);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.flex2 img{
+    margin: 5px 0;
+    width: 230px;
+    height: auto;
+    border-radius: 150px;
+}
+.arrow{
+    height: 80px !important;
+    transform: rotateZ(90deg);
+}
+#output, .wait{
+    width: 320px;
+    height: auto;
+    margin: 30px 0;
+    left: calc((100% - 320px) / 2);
+}
+
+
+.button{
+    padding: 15px 25px;
+    background-color: rgb(34, 34, 40);
+    color: white;
+    text-align: center;
+    margin: 10px auto;
+    width: 220px;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+}
+#wait{
+    width: 280px;
+    left: calc((100% - 280px) / 2);
+}
+@media screen and (max-width : 670px){
+    #wrapper{
+        flex-direction: column;
+    }
+    .flex1, .flex2{
+        width: 100%;
+    }
+    img{
+        margin: 10px 0;
+    }
+}

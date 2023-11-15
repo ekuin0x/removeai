@@ -1,0 +1,5 @@
+venv/
+.dist/
+firebase.py
+static/images
+static/results
