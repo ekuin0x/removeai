@@ -2,4 +2,3 @@ flask
 rembg
 pyrebase
 gunicorn
-python-dotenv

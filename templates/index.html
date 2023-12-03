@@ -1,47 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZR8M0RTGP0"></script>
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DSWWEJCHDT"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-ZR8M0RTGP0');
+      gtag("config", "G-DSWWEJCHDT");
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remove Background From Images</title>
-    <link rel="stylesheet" href="/static/style.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="/static/script.js"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
-
-</head>
-<body>
-
+    <title>Remove Background From Images | removeAI</title>
+    <meta
+      name="description"
+      content="removeai is a tool to help you remove background from images with highest image quality"
+    />
+    <meta
+      name="keywords"
+      content="remove ai,background remover,remove background from images removeAI"
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="index, follow" />
+    <meta itemprop="name" content="removeai" />
+    <meta
+      itemprop="description"
+      content="removeai is a tool to help you remove background from images with highest image quality"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Remove Background From Images  | removeAI"
+    />
+    <meta
+      property="og:description"
+      content="removeai is a tool to help you remove background from images with highest image quality"
+    />
+    <meta property="twitter:card" content="summary" />
+    <meta
+      property="twitter:title"
+      content="Remove Background From Images | removeAI"
+    />
+    <meta
+      property="twitter:description"
+      content="removeai is a tool to help you remove background from images with highest image quality"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/favicon/favicon-16x16.png"
+    />
+  </head>
+  <body>
     <nav>Remove <b>AI</b></nav>
 
-    <div id="wrapper">
-        <div class="flex1">
-            <h2>Free & Easy Background Remover</h2>
-            <div id="upload">
-                    <input type="file" id="input" class="input" name="image" accept="Image/*" onchange="upload()"> 
-                <p>+</p>
-            </div>
-            <p>Upload Your Image</p>
-        </div>
+    <p id="main-p">Remove Background from any image</p>
 
-        <div class="flex2">
-            <img src="/static/media/c4.png" alt="">
-            <img class="arrow" src="/static/media/342790_arrow_right_icon.svg" alt="">
-            <img src="/static/media/fuck.png" alt="">
-        </div>
-
+    <div>
+      <input id="input" type="file" accept="images/*" />
+      <p>+</p>
+      <u>select image</u>
     </div>
 
-</body>
+    <a class="button" id="save">Download image</a>
+    <a class="button" href="/">Re-upload</a>
+    <footer>
+      <b
+        >Introducing our revolutionary online web application: RemoveAI is here
+        to simplify the process.</b
+      >
+      <br />
+
+      Our free application employs cutting-edge AI technology to swiftly and
+      accurately remove backgrounds from images, delivering professional results
+      in a matter of seconds. No more tedious manual editing or complex
+      software, it's as easy as a few clicks. Simply upload your image, and let
+      our advanced algorithms handle the rest.
+    </footer>
+
+    <script src="/static/script.js"></script>
+  </body>
 </html>

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-body{
+body,html{
     margin: 0;
-    padding: 0;
 }
 
 *{
@@ -10,118 +9,78 @@ body{
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.gif{
-    width: 100%;
-    height: auto;
+a{
+    color: black;
+    text-decoration: none;
 }
 
 nav{
-    width: 100%;
-    height: 100px;
-    background-image: linear-gradient(to right , rgb(155, 61, 146),rgb(83, 142, 195),rgb(46, 112, 226));
+    padding: 20px;
+    background-color: rgb(40, 179, 210);
+    text-align: center;
     color: white;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 20px;
 }
 nav b{
-    color: rgb(1, 1, 1);
+    background-color: rgb(255, 255, 255);
+    color: rgb(40, 179, 210);
+    padding: 8px;
+    border-radius: 4px;
 }
-p{
+
+#main-p{
     text-align: center;
+    font-size: 20px;
+    margin: 20px auto;
+    width: fit-content;
+    padding: 12px 0;
+    color: rgb(10, 99, 117);
+    border-bottom:2px solid rgb(177, 177, 177) ;
 }
-.input, form{
-    width: 100%;
-    height: 100vh;
-    opacity: 0;
+
+div{
+    margin: 20px auto;
+    width: 300px;
+    height: auto;
+    min-height: 250px;
+    background-color: rgb(219, 227, 231);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+div input{
     position: absolute;
-    z-index: 10;
-}
-
-#wrapper{
     width: 100%;
-    display: flex;
-    flex-direction: row;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
 }
-.flex1{
-    width: calc(100vw - 300px);
-    min-height: 70vh;
+div p{
+    font-size: 70px;
+    color: rgb(43, 154, 176);
 }
-h2{
-    padding: 40px;
-    text-align: center;
-    text-decoration: underline;
-}
-#upload{
-    width: 300px;
-    height: 200px;
-    background-color: rgb(56, 56, 56);
-    margin: auto;
-    border-radius: 5px;
-    display: flex;align-items: center;justify-content: center;
-    cursor: pointer;
-    overflow: hidden;
-}
-#upload p{
-    color: #809BC9;
-    font-size: 130px;
-}
-#upload:hover{
-    background-color: #174669;
-    transition: .4s;
-}
-.flex2{
-    width: 300px;
-    background-color: rgb(46, 112, 226);
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-}
+div img{
+    width: 100%;
 
-.flex2 img{
-    margin: 5px 0;
-    width: 230px;
-    height: auto;
-    border-radius: 150px;
 }
-.arrow{
-    height: 80px !important;
-    transform: rotateZ(90deg);
-}
-#output, .wait{
-    width: 320px;
-    height: auto;
-    margin: 30px 0;
-    left: calc((100% - 320px) / 2);
-}
-
 
 .button{
-    padding: 15px 25px;
-    background-color: rgb(34, 34, 40);
+    display: none;
+    background-color: rgb(53, 53, 53);
     color: white;
-    text-align: center;
+    border-radius: 5px;
+    width: 300px ;
     margin: 10px auto;
-    width: 220px;
-    border-radius: 4px;
-    cursor: pointer;
-    overflow: hidden;
+    padding: 12px;
+    text-align: center;
 }
-#wait{
-    width: 280px;
-    left: calc((100% - 280px) / 2);
-}
-@media screen and (max-width : 670px){
-    #wrapper{
-        flex-direction: column;
-    }
-    .flex1, .flex2{
-        width: 100%;
-    }
-    img{
-        margin: 10px 0;
-    }
+
+footer{
+    width: 100%;
+    max-width: 870px;
+    padding: 20px ;
+    margin: auto;
+    line-height: 25px;
+    background-color: rgb(240, 240, 240);
+    
 }

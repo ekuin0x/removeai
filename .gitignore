@@ -1,5 +1,7 @@
 venv/
 .dist/
+__pycache__/
 firebase.py
 static/images
-static/results
+static/media
+news.py
